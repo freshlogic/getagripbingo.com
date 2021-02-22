@@ -1,0 +1,117 @@
+<html>
+    <head>
+	    <title>Get a Grip Bingo</title>
+        <meta name="viewport" content="width=768, initial-scale=1">
+	    <style>
+	        body {
+                font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; 
+                font-weight: 300;
+                text-align: center;
+            }
+
+            header {
+                font-size: 128px;
+                font-weight: bold;
+            }
+
+            header img {
+                height: 128px;
+                position: relative;
+                top: 16px;
+            }
+
+            table {
+                margin: 0 auto;
+            }
+
+            table td {
+                border: 1px solid #000;
+                height: 128px;
+                padding: 8px;
+                text-align: center;
+                width: 128px;
+            }
+	    </style>
+        <script>
+            var phrases = [
+                '#golf',
+                '69. Nice!',
+                'Aaron Rogers',
+                'Aon Risk Reward Challenge',
+                'Arizona',
+                'Bandon Dunes',
+                'Be Kind',
+                'Max mentions one of his best friends',
+                'Best Shot of the Week',
+                'Connecticut',
+                'Damon Hack',
+                'Feel Good Friday',
+                'Fiji Water',
+                'Flights',
+                'FootJoy',
+                'Genesis',
+                'Gift Cards',
+                'Golf Channel',
+                'Golf Today',
+                'Hairless Platypus',
+                'Joe Greiner',
+                'Joel Dahmen',
+                'Jordan Speith',
+                'LA Dodgers',
+                'LA Lakers',
+                'Lebron James',
+                'Mastercard',
+                'Max Has a Bad Idea',
+                'Max Has a Good Idea',
+                'PGA Tour Live',
+                'Quail Hollow',
+                'Riveria',
+                'Shank',
+                'Wear a Hoodie',
+                'No Laying Up',
+                'Good Idea',
+                'Shane Has a Bad Idea',
+                'Shane Has a "Good" Idea',
+                'Sick!',
+                'Sizzler',
+                'Sports Fans, Golf Fans, or Just Fans.',
+                'Steak Walks',
+                'Vista Valencia Golf Course',
+                'Wash Your Hands',
+                'Wells Fargo',
+                'Worst Shot of the Week',
+                'Worst Thing I Saw This Week'
+            ];
+            
+            function generate() {
+                var usedPhrases = [];
+                var node = document.getElementById('card');
+                var html = '';
+                
+                for (var y = 0; y < 5; y++) {
+                    html += "<tr>"
+                    
+                    for(var x = 0; x < 5; x++) {
+                        do {
+                            var i = Math.round(Math.random() * (phrases.length - 1));
+                            var phrase = phrases[i];
+                        } while (usedPhrases.indexOf(phrase) >= 0);
+
+                        usedPhrases.push(phrase);
+                        html += '<td>' + phrase + '</td>';				
+                    }
+
+                    html += "</tr>"
+                }
+
+                node.innerHTML = html;
+            }
+        </script>
+    </head>
+    <body onLoad="generate()">
+        <header>
+            <img src="https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613956491/nl87vx1iccsgij7rrnzj.png" /> BINGO
+        </header>
+        <table id="card"></table>
+    </body>
+</html>
