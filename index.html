@@ -9,6 +9,15 @@
                 text-align: center;
             }
 
+            footer {
+                opacity: 0.5;
+            }
+
+            h3 {
+                margin: 0 auto 16px auto;
+                width: 742px;
+            }
+
             header {
                 font-size: 128px;
                 font-weight: bold;
@@ -20,8 +29,13 @@
                 top: 16px;
             }
 
+            p {
+                margin: 0 auto 16px auto;
+                width: 742px;
+            }
+
             table {
-                margin: 0 auto;
+                margin: 0 auto 16px auto;
             }
 
             table td {
@@ -31,87 +45,278 @@
                 text-align: center;
                 width: 128px;
             }
+
+            table td .icon {
+                display: block;
+                max-height: 48px;
+                margin: 0 auto 4px auto;
+                max-width: 48px;
+            }
+
+            @media print {
+                h3 {
+                    display: none;
+                }
+
+                p {
+                    display: none;
+                }
+            }
 	    </style>
         <script>
             var phrases = [
-                '#golf',
-                '69. Nice!',
-                'Aaron Rogers',
-                'Aon Risk Reward Challenge',
-                'Arizona',
-                'Bandon Dunes',
-                'Be Kind',
-                'Max mentions one of his best friends',
-                'Best Shot of the Week',
-                'Connecticut',
-                'Damon Hack',
-                'Feel Good Friday',
-                'Fiji Water',
-                'Flights',
-                'FootJoy',
-                'Genesis',
-                'Gift Cards',
-                'Golf Channel',
-                'Golf Today',
-                'Hairless Platypus',
-                'Joe Greiner',
-                'Joel Dahmen',
-                'Jordan Speith',
-                'LA Dodgers',
-                'LA Lakers',
-                'Lebron James',
-                'Mastercard',
-                'Max Has a Bad Idea',
-                'Max Has a Good Idea',
-                'PGA Tour Live',
-                'Quail Hollow',
-                'Riveria',
-                'Shank',
-                'Wear a Hoodie',
-                'No Laying Up',
-                'Good Idea',
-                'Shane Has a Bad Idea',
-                'Shane Has a "Good" Idea',
-                'Sick!',
-                'Sizzler',
-                'Sports Fans, Golf Fans, or Just Fans.',
-                'Steak Walks',
-                'Vista Valencia Golf Course',
-                'Wash Your Hands',
-                'Wells Fargo',
-                'Worst Shot of the Week',
-                'Worst Thing I Saw This Week'
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613964963/mblcviutrj2hzlmnsjb7.png',
+                    text: '#golf'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613965147/rbt5pb4rgx4zgczzg4qf.jpg',
+                    text: '69. Nice!'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970081/oqbxxpx8uqbzcfxft8xl.jpg',
+                    text: '7-wood'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613965219/h0vizs2nolteeqgtpprr.jpg',
+                    text: 'Aaron Rogers'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613965617/jh6suang4dpk5lc0rgqe.png',
+                    text: 'Aon Risk Reward Challenge'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613965968/tyjk5gqjtxqm4h5aedyk.png',
+                    text: 'Arizona'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613966045/te13ndjdro4wkkpa9guj.png',
+                    text: 'Bandon Dunes'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613966116/qbe6onitbzdvkcwp1uv4.jpg',
+                    text: 'Be Kind'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970769/j6xugahvre0cvy9k3cme.png',
+                    text: 'Best Thing I Heard This Week'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970769/j6xugahvre0cvy9k3cme.png',
+                    text: 'Best Thing I Saw This Week'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613967404/nsevfieirte3wdqm2chp.png',
+                    text: 'Max mentions one of his best friends'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613968571/rzee9btsyu3fcuhwq30p.png',
+                    text: 'Mark Hubbard Best Shot of the Week Award'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613967486/iqdiuxmdhmhpapg3ypav.png',
+                    text: 'Connecticut'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613967677/vih5sov8nz65ngcxwl52.jpg',
+                    text: 'Damon Hack'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613968652/lumflrcdcyjeqjcysf0w.png',
+                    text: 'Feel Good Friday'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613967744/khb8l5h391frrxwq766v.png',
+                    text: 'Fiji Water Is Expensive'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613967824/o5fhwdvbx9o4ehvmtkpe.png',
+                    text: 'FootJoy'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613967898/tyvsgnnfox8n8emlxii5.jpg',
+                    text: 'Genesis'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613967961/i5uai6wkzyrpflj9ofmt.jpg',
+                    text: 'Gift Cards'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613968066/gh1xoryisdz1ocz4xjbn.jpg',
+                    text: 'Golf Today'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613968261/gkwlucujge8w2ipo9n5e.jpg',
+                    text: 'Hairless Platypus'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613968771/xrrbiu9x3bwoxu2er2z7.jpg',
+                    text: 'Joe Greiner'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613968858/vrw8h02zwqfopntxmvs8.jpg',
+                    text: 'Joel Dahmen'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613968915/m0hqw7htxzhck9gbpzto.png',
+                    text: 'Jordan Speith'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613969091/yfczybquqijea1snraxs.jpg',
+                    text: 'Kobe'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613966389/h1sg1xoc0rtoa53cnx3m.png',
+                    text: 'LA Dodgers'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613966412/sm7adkzeb74ilbemiex1.png',
+                    text: 'LA Lakers'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613969055/mxr0fmsjdquehqok0j4z.png',
+                    text: 'Lebron'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613968968/j3fjgvjy4wv8jtwq9csq.png',
+                    text: 'Mastercard'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970337/u1jajih1gd7twmppcsw1.png',
+                    text: 'Max Has a Bad Idea'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970187/iu98dtavyqlowbsro5vg.png',
+                    text: 'Max Has a Good Idea'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613966302/nbwnvupg1flcr66uhxax.png',
+                    text: 'Max says, "Hell Yeah!"'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613966302/nbwnvupg1flcr66uhxax.png',
+                    text: 'Max says, "Sick!"'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613969206/vhjyo1iam1dmg54d6y6s.png',
+                    text: 'PGA Tour Live'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613969470/iry3iqylw5fxr3x4cosf.jpg',
+                    text: 'Quail Hollow'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613969625/mzttwhncjztuejgjhkro.png',
+                    text: 'Riveria'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613969303/dmxxvbheu1pnr8txofud.jpg',
+                    text: 'No Laying Up'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970337/u1jajih1gd7twmppcsw1.png',
+                    text: 'Shane Has a Bad Idea'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970187/iu98dtavyqlowbsro5vg.png',
+                    text: 'Shane Has a "Good" Idea'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613965365/ouxlssfamw3v49yqms0o.jpg',
+                    text: 'Shane mentions the Golf Channel'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613965856/xlskld1ovzjauf1oyagy.jpg',
+                    text: 'Sizzler'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613969836/szoyrb3oj3tjlep1u4or.jpg',
+                    text: 'Sports Fans, Golf Fans, or Just Fans'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613969953/sjoe7slzd35vjgoxzdhp.png',
+                    text: 'Steak Walks'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970632/hg1fo12hn6zb7u2nkxdh.png',
+                    text: 'Vista Valencia Golf Course'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970513/wldolwufgnn0qocbupjs.jpg',
+                    text: 'Wash Your Hands'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970430/fss5tze5kmrbtlu6tafi.jpg',
+                    text: 'Wear a Hoodie'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970687/c6ofnsw3fbha77uv0hrs.png',
+                    text: 'Wells Fargo'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970846/oxtxax61e5uzzyxhrc1b.png',
+                    text: 'Worst Thing I Heard This Week'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613970846/oxtxax61e5uzzyxhrc1b.png',
+                    text: 'Worst Thing I Saw This Week'
+                },
+                {
+                    icon: 'https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613971168/xmx8t4fdwkfqghmlsato.png',
+                    text: 'XGOLF'
+                }
             ];
             
-            function generate() {
-                var usedPhrases = [];
+            window.addEventListener('load', function() {
                 var node = document.getElementById('card');
                 var html = '';
                 
                 for (var y = 0; y < 5; y++) {
                     html += "<tr>"
                     
-                    for(var x = 0; x < 5; x++) {
-                        do {
+                    for (var x = 0; x < 5; x++) {
+                        if (y === 2 && x == 2) {
+                            html += '<td>FREE</td>';
+                        } else {
+
                             var i = Math.round(Math.random() * (phrases.length - 1));
                             var phrase = phrases[i];
-                        } while (usedPhrases.indexOf(phrase) >= 0);
+                            phrases.splice(i, 1);
 
-                        usedPhrases.push(phrase);
-                        html += '<td>' + phrase + '</td>';				
+                            html += '<td>';
+                            
+                            if (phrase.icon) {
+                                html += '<img class="icon" src="' + phrase.icon + '" />';
+                            }
+
+                            html += phrase.text;
+                            html += '</td>';
+                        }
                     }
 
                     html += "</tr>"
                 }
 
                 node.innerHTML = html;
-            }
+            });
         </script>
     </head>
-    <body onLoad="generate()">
+    <body>
         <header>
             <img src="https://d2b8wt72ktn9a2.cloudfront.net/mediocre/image/upload/v1613956491/nl87vx1iccsgij7rrnzj.png" /> BINGO
         </header>
+        <h3>
+            Hosted by broadcaster Shane Bacon and PGA Tour pro Max Homa, <a href="https://www.iheart.com/podcast/1119-get-a-grip-with-max-homa-56454980/" target="_blank">Get a Grip</a> is a golf-centric podcast making light of a rather stuffy sport with legitimate insight into the game.
+        </h3>
+        <p>
+            <strong>How to Play:</strong>
+            <a href="javascript:window.print()">Print</a> a copy of your randomly generate bingo card below any time you're listening to the <a href="https://www.iheart.com/podcast/1119-get-a-grip-with-max-homa-56454980/" target="_blank">Get a Grip</a> podcast.
+            Cross off a square any time you hear one of the phrases or topics.
+            Let us know how you did over on Twitter using hashtag <a href="https://twitter.com/search?q=%23getagrip&f=live" target="_blank">#getagrip</a>.
+        </p>
         <table id="card"></table>
+        <footer>
+            Made by <a href="https://twitter.com/smiller" target="_blank">@smiller</a> in St. Louis. Let me know if there's a phrase I should add.
+        </footer>
     </body>
 </html>
