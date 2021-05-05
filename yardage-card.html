@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style>
+            @font-face {
+                font-family: 'Benton Sans';
+                src: url("https://masters.com/assets/fonts/bentonsans/BentonSans-Book.eot");
+                src: url("https://masters.com/assets/fonts/bentonsans/BentonSans-Book.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/bentonsans/BentonSans-Book.woff2") format("woff2"), url("https://masters.com/assets/fonts/bentonsans/BentonSans-Book.woff") format("woff"), url("https://masters.com/assets/fonts/bentonsans/BentonSans-Book.otf") format("opentype");
+                font-weight: normal;
+                font-style:normal
+            }
+
+            @font-face {
+                font-family: 'Benton Sans';
+                src: url("https://masters.com/assets/fonts/bentonsans/BentonSans-Medium.eot");
+                src: url("https://masters.com/assets/fonts/bentonsans/BentonSans-Medium.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/bentonsans/BentonSans-Medium.woff2") format("woff2"), url("https://masters.com/assets/fonts/bentonsans/BentonSans-Medium.woff") format("woff"), url("https://masters.com/assets/fonts/bentonsans/BentonSans-Medium.otf") format("opentype");
+                font-weight: 500;
+                font-style:normal
+            }
+
+            @font-face {
+                font-family: 'Benton Sans';
+                src: url("https://masters.com/assets/fonts/bentonsans/BentonSans-BookItalic.eot");
+                src: url("https://masters.com/assets/fonts/bentonsans/BentonSans-BookItalic.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/bentonsans/BentonSans-BookItalic.woff2") format("woff2"), url("https://masters.com/assets/fonts/bentonsans/BentonSans-BookItalic.woff") format("woff"), url("https://masters.com/assets/fonts/bentonsans/BentonSans-BookItalic.otf") format("opentype");
+                font-weight: normal;
+                font-style:italic
+            }
+
+            @font-face {
+                font-family: 'Tiempos';
+                src: url("https://masters.com/assets/fonts/tiempos/TiemposText-Medium.eot");
+                src: url("https://masters.com/assets/fonts/tiempos/TiemposText-Medium.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/tiempos/TiemposText-Medium.woff2") format("woff2"), url("https://masters.com/assets/fonts/tiempos/TiemposText-Medium.woff") format("woff"), url("https://masters.com/assets/fonts/tiempos/TiemposText-Medium.otf") format("opentype");
+                font-weight: 500;
+                font-style:normal
+            }
+
+            @font-face {
+                font-family: 'Tiempos Text';
+                src: url("https://masters.com/assets/fonts/tiempos/TiemposText-Regular.eot");
+                src: url("https://masters.com/assets/fonts/tiempos/TiemposText-Regular.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/tiempos/TiemposText-Regular.woff2") format("woff2"), url("https://masters.com/assets/fonts/tiempos/TiemposText-Regular.woff") format("woff"), url("https://masters.com/assets/fonts/tiempos/TiemposText-Regular.ttf") format("truetype"), url("https://masters.com/assets/fonts/tiempos/TiemposText-Regular.svg#Tiempos Text") format("svg")
+            }
+
+            @font-face {
+                font-family: 'Tiempos Headline';
+                src: url("https://masters.com/assets/fonts/tiempos/TiemposHeadline-Semibold.eot");
+                src: url("https://masters.com/assets/fonts/tiempos/TiemposHeadline-Semibold.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/tiempos/TiemposHeadline-Semibold.woff2") format("woff2"), url("https://masters.com/assets/fonts/tiempos/TiemposHeadline-Semibold.woff") format("woff"), url("https://masters.com/assets/fonts/tiempos/TiemposHeadline-Semibold.ttf") format("truetype"), url("https://masters.com/assets/fonts/tiempos/TiemposHeadline-Semibold.svg#Tiempos Headline") format("svg")
+            }
+
+            @font-face {
+                font-family: 'Helvetica Neue LT Medium';
+                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.eot");
+                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.woff") format("woff"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.ttf") format("truetype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.svg#helveticaneueltstd-mdcn") format("svg");
+                font-weight: 500;
+                font-style:normal
+            }
+
+            @font-face {
+                font-family: 'Double LB';
+                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaltstd-extracomp-webfont.eot");
+                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaltstd-extracomp-webfont.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaltstd-extracomp-webfont.woff") format("woff"), url("https://masters.com/assets/fonts/helveticaneue/helveticaltstd-extracomp-webfont.ttf") format("truetype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaltstd-extracomp-webfont.svg#webfontfXzY9mEX") format("svg");
+                font-weight: normal;
+                font-style:normal
+            }
+
+            @font-face {
+                font-family: 'Single LB';
+                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-bdcn-webfont.eot");
+                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-bdcn-webfont.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-bdcn-webfont.woff") format("woff"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-bdcn-webfont.ttf") format("truetype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-bdcn-webfont.svg#webfontOLT3zDH6") format("svg");
+                font-weight: normal;
+                font-style:normal
+            }
+
+            @font-face {
+                font-family: 'Player Name';
+                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.eot");
+                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.woff") format("woff"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.ttf") format("truetype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.svg#webfontTGfwPiZq") format("svg");
+                font-weight: normal;
+                font-style:normal
+            }
+
+            @font-face {
+                font-family: 'Playfair Display';
+                src: url("https://masters.com/assets/fonts/playfairdisplay-regular-webfont.woff") format("woff"), url("https://masters.com/assets/fonts/playfair-display-regular.ttf") format("truetype");
+                font-weight: normal;
+                font-style:normal
+            }
+
+            body {
+                font-weight: normal;
+                font-style: normal;
+                font-family: 'Benton Sans', BentonSans, Arial, Helvetica, sans-serif;
+                -webkit-text-size-adjust: none;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            .average {
+                background-color: #009B77;
+                color: #fff;
+            }
+
+            .average .name {
+                margin: 4px 0 4px 8px;
+            }
+
+            .average .yardage {
+                float: right;
+                font-weight: bold;
+                margin: 0 2px 0 0;
+            }
+
+            .bag {
+                border: 1px dashed #ccc;
+                display: inline-block;
+                height: 5.5in;
+                position: relative;
+                width: 3in;
+            }
+
+            .bag footer {
+                bottom: 8px;
+                color: #ccc;
+                font-family: Tiempos, "Tiempos Text", "Tiempos Headline", "Times New Roman", serif;
+                position: absolute;
+                right: 8px;
+            }
+
+            .bag h1 {
+                color: rgb(0, 103, 71);
+                font-family: Tiempos, "Tiempos Text", "Tiempos Headline", "Times New Roman", serif;
+                font-size: 18px;
+                margin: 6px 0;
+                text-align: center;
+            }
+
+            .club {
+                margin: 0 0 2px 0;
+            }
+
+            .max, .min {
+                background-color: #009B77;
+                line-height: 8px;
+                text-align: right;
+            }
+
+            .max .yardage, .min .yardage {
+                color: rgba(252, 227, 0);
+                font-weight: bold;
+                font-size: 8px;
+                margin: 0 2px 0 0;
+                position: relative;
+                top: -1px;
+            }
+        </style>
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            function Bag(props) {
+                const date = new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+
+                return (
+                    <>
+                        <div className="bag">
+                            <h1>Carry</h1>
+                            {props.bag.clubs.map((club) => <Club bag={props.bag} club={club} type="carry" />)}
+                            <footer>{date}</footer>
+                        </div>
+                        <div className="bag">
+                            <h1>Total</h1>
+                            {props.bag.clubs.map((club) => <Club bag={props.bag} club={club} type="total" />)}
+                            <footer>{date}</footer>
+                        </div>
+                    </>
+                );
+            }
+
+            function Club(props) {
+                const bagMax = Math.max(...props.bag.clubs.map(c => c.total.max));
+                let yardages = props.club.carry;
+
+                if (props.type === 'total') {
+                    yardages = props.club.total;
+                }
+
+                const averageStyle = {
+                    width: (yardages.average / bagMax * 100) + '%'
+                };
+
+                const maxStyle = {
+                    width: (yardages.max / bagMax * 100) + '%'
+                };
+
+                const minStyle = {
+                    width: (yardages.min / bagMax * 100) + '%'
+                };
+
+                return (
+                    <div className="club">
+                        <div className="max" style={maxStyle}>
+                            <span className="yardage">{yardages.max}</span>
+                        </div>
+                        <div className="average" style={averageStyle}>
+                            <span className="name">{props.club.name}</span>
+                            <span className="yardage">{yardages.average}</span>
+                        </div>
+                        <div className="min" style={minStyle}>
+                            <span className="yardage">{yardages.min}</span>
+                        </div>
+                    </div>
+                );
+            }
+
+            const bag = {
+                clubs: [
+                    {
+                        carry: {
+                            average: 120,
+                            max: 124,
+                            min: 115
+                        },
+                        name: 'Driver',
+                        total: {
+                            average: 129,
+                            max: 135,
+                            min: 123
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 109,
+                            max: 121,
+                            min: 101
+                        },
+                        name: '3-wood',
+                        total: {
+                            average: 118,
+                            max: 132,
+                            min: 107
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 102,
+                            max: 114,
+                            min: 95
+                        },
+                        name: '4-hybrid',
+                        total: {
+                            average: 110,
+                            max: 120,
+                            min: 102
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 101,
+                            max: 108,
+                            min: 95
+                        },
+                        name: '5-iron',
+                        total: {
+                            average: 108,
+                            max: 114,
+                            min: 101
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 92,
+                            max: 96,
+                            min: 89
+                        },
+                        name: '6-iron',
+                        total: {
+                            average: 98,
+                            max: 103,
+                            min: 94
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 88,
+                            max: 95,
+                            min: 82
+                        },
+                        name: '7-iron',
+                        total: {
+                            average: 95,
+                            max: 102,
+                            min: 91
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 84,
+                            max: 86,
+                            min: 81
+                        },
+                        name: '8-iron',
+                        total: {
+                            average: 88,
+                            max: 91,
+                            min: 86
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 79,
+                            max: 83,
+                            min: 72
+                        },
+                        name: '9-iron',
+                        total: {
+                            average: 83,
+                            max: 88,
+                            min: 76
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 70,
+                            max: 75,
+                            min: 66
+                        },
+                        name: 'PW',
+                        total: {
+                            average: 73,
+                            max: 77,
+                            min: 69
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 68,
+                            max: 73,
+                            min: 61
+                        },
+                        name: '52°',
+                        total: {
+                            average: 69,
+                            max: 74,
+                            min: 63
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 54,
+                            max: 58,
+                            min: 51
+                        },
+                        name: '56°',
+                        total: {
+                            average: 55,
+                            max: 60,
+                            min: 53
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 45,
+                            max: 48,
+                            min: 43
+                        },
+                        name: '60°',
+                        total: {
+                            average: 46,
+                            max: 49,
+                            min: 43
+                        }
+                    }
+                ]
+            };
+
+            ReactDOM.render(
+                <Bag bag={bag} />,
+                document.getElementById('root')
+            );
+        </script>
+    </body>
+</html>
