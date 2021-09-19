@@ -56,37 +56,6 @@
                 font-style:normal
             }
 
-            @font-face {
-                font-family: 'Double LB';
-                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaltstd-extracomp-webfont.eot");
-                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaltstd-extracomp-webfont.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaltstd-extracomp-webfont.woff") format("woff"), url("https://masters.com/assets/fonts/helveticaneue/helveticaltstd-extracomp-webfont.ttf") format("truetype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaltstd-extracomp-webfont.svg#webfontfXzY9mEX") format("svg");
-                font-weight: normal;
-                font-style:normal
-            }
-
-            @font-face {
-                font-family: 'Single LB';
-                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-bdcn-webfont.eot");
-                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-bdcn-webfont.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-bdcn-webfont.woff") format("woff"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-bdcn-webfont.ttf") format("truetype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-bdcn-webfont.svg#webfontOLT3zDH6") format("svg");
-                font-weight: normal;
-                font-style:normal
-            }
-
-            @font-face {
-                font-family: 'Player Name';
-                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.eot");
-                src: url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.eot?#iefix") format("embedded-opentype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.woff") format("woff"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.ttf") format("truetype"), url("https://masters.com/assets/fonts/helveticaneue/helveticaneueltstd-mdcn-webfont.svg#webfontTGfwPiZq") format("svg");
-                font-weight: normal;
-                font-style:normal
-            }
-
-            @font-face {
-                font-family: 'Playfair Display';
-                src: url("https://masters.com/assets/fonts/playfairdisplay-regular-webfont.woff") format("woff"), url("https://masters.com/assets/fonts/playfair-display-regular.ttf") format("truetype");
-                font-weight: normal;
-                font-style:normal
-            }
-
             body {
                 font-weight: normal;
                 font-style: normal;
@@ -127,15 +96,16 @@
             }
 
             .bag h1 {
+                bottom: 20px;
                 color: rgb(0, 103, 71);
                 font-family: Tiempos, "Tiempos Text", "Tiempos Headline", "Times New Roman", serif;
                 font-size: 18px;
-                margin: 6px 0;
-                text-align: center;
+                position: absolute;
+                right: 8px;
             }
 
             .club {
-                margin: 0 0 2px 0;
+                margin: 0 0 1.75px 0;
             }
 
             .max, .min {
@@ -219,158 +189,171 @@
                 clubs: [
                     {
                         carry: {
-                            average: 120,
-                            max: 124,
-                            min: 115
+                            average: 231,
+                            max: 240,
+                            min: 220
                         },
                         name: 'Driver',
                         total: {
-                            average: 129,
-                            max: 135,
-                            min: 123
+                            average: 248,
+                            max: 259,
+                            min: 238
                         }
                     },
                     {
                         carry: {
-                            average: 109,
-                            max: 121,
-                            min: 101
+                            average: 207,
+                            max: 218,
+                            min: 200
                         },
                         name: '3-wood',
                         total: {
-                            average: 118,
-                            max: 132,
-                            min: 107
+                            average: 222,
+                            max: 234,
+                            min: 202
                         }
                     },
                     {
                         carry: {
-                            average: 102,
-                            max: 114,
-                            min: 95
+                            average: 203,
+                            max: 214,
+                            min: 197
                         },
-                        name: '4-hybrid',
+                        name: '5-wood',
                         total: {
-                            average: 110,
-                            max: 120,
-                            min: 102
+                            average: 214,
+                            max: 227,
+                            min: 204
                         }
                     },
                     {
                         carry: {
-                            average: 101,
-                            max: 108,
-                            min: 95
+                            average: 188,
+                            max: 205,
+                            min: 174
+                        },
+                        name: '4-iron',
+                        total: {
+                            average: 201,
+                            max: 217,
+                            min: 186
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 183,
+                            max: 192,
+                            min: 175
                         },
                         name: '5-iron',
                         total: {
-                            average: 108,
-                            max: 114,
-                            min: 101
+                            average: 194,
+                            max: 203,
+                            min: 186
                         }
                     },
                     {
                         carry: {
-                            average: 92,
-                            max: 96,
-                            min: 89
+                            average: 175,
+                            max: 183,
+                            min: 166
                         },
                         name: '6-iron',
                         total: {
-                            average: 98,
-                            max: 103,
-                            min: 94
+                            average: 184,
+                            max: 193,
+                            min: 174
                         }
                     },
                     {
                         carry: {
-                            average: 88,
-                            max: 95,
-                            min: 82
+                            average: 167,
+                            max: 172,
+                            min: 158
                         },
                         name: '7-iron',
                         total: {
-                            average: 95,
-                            max: 102,
+                            average: 174,
+                            max: 181,
+                            min: 161
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 155,
+                            max: 167,
+                            min: 149
+                        },
+                        name: '8-iron',
+                        total: {
+                            average: 159,
+                            max: 171,
+                            min: 132
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 133,
+                            max: 141,
+                            min: 125
+                        },
+                        name: '9-iron',
+                        total: {
+                            average: 136,
+                            max: 144,
+                            min: 125
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 120,
+                            max: 127,
+                            min: 114
+                        },
+                        name: 'PW',
+                        total: {
+                            average: 121,
+                            max: 132,
+                            min: 115
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 111,
+                            max: 121,
+                            min: 104
+                        },
+                        name: '50°',
+                        total: {
+                            average: 113,
+                            max: 122,
+                            min: 103
+                        }
+                    },
+                    {
+                        carry: {
+                            average: 98,
+                            max: 104,
+                            min: 92
+                        },
+                        name: '54°',
+                        total: {
+                            average: 98,
+                            max: 101,
                             min: 91
                         }
                     },
                     {
                         carry: {
-                            average: 84,
-                            max: 86,
-                            min: 81
-                        },
-                        name: '8-iron',
-                        total: {
                             average: 88,
-                            max: 91,
-                            min: 86
-                        }
-                    },
-                    {
-                        carry: {
-                            average: 79,
-                            max: 83,
-                            min: 72
+                            max: 93,
+                            min: 85
                         },
-                        name: '9-iron',
+                        name: '58°',
                         total: {
-                            average: 83,
-                            max: 88,
-                            min: 76
-                        }
-                    },
-                    {
-                        carry: {
-                            average: 70,
-                            max: 75,
-                            min: 66
-                        },
-                        name: 'PW',
-                        total: {
-                            average: 73,
-                            max: 77,
-                            min: 69
-                        }
-                    },
-                    {
-                        carry: {
-                            average: 68,
-                            max: 73,
-                            min: 61
-                        },
-                        name: '52°',
-                        total: {
-                            average: 69,
-                            max: 74,
-                            min: 63
-                        }
-                    },
-                    {
-                        carry: {
-                            average: 54,
-                            max: 58,
-                            min: 51
-                        },
-                        name: '56°',
-                        total: {
-                            average: 55,
-                            max: 60,
-                            min: 53
-                        }
-                    },
-                    {
-                        carry: {
-                            average: 45,
-                            max: 48,
-                            min: 43
-                        },
-                        name: '60°',
-                        total: {
-                            average: 46,
-                            max: 49,
-                            min: 43
+                            average: 87,
+                            max: 99,
+                            min: 80
                         }
                     }
                 ]
